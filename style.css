@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    font-size: 200px;
+    font-family: 'Dela Gothic One', cursive;
+    color: white;
+}
+div {
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: url("image.jpg");
+    animation: showup;
+    animation-duration: 6s;
+    animation-iteration-count:infinite;
+    background-size: 100%;
+}
+
+@keyframes showup{
+    0%{
+        background-size: 60%;
+    }
+    100%{
+        background-size: 100%;
+    }
+}
